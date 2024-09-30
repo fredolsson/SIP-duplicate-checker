@@ -91,7 +91,7 @@ def list_classified_pdfs():
         # Display the DataFrame in Streamlit
         st.dataframe(df)
     else:
-        st.write("No PDFs have been classified yet.")
+        st.write("Inga dokument har lästs än.")
 
 # Streamlit app UI
 def main():
@@ -150,7 +150,7 @@ def main():
                 st.session_state.status_checked = False  # Reset after marking as read
 
     # Section to list all classified PDFs
-    st.subheader("Redan lästa PDF:er:")
+    st.subheader("Redan lästa dokument")
     list_classified_pdfs()
 
 if __name__ == "__main__":
